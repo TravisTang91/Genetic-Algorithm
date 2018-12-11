@@ -20,7 +20,7 @@ import numpy as np
 #     o += [b[:]]
 #     return o
 
-# #single-point crossover
+# single-point crossover
 def breeder(a, b):
     swap = sample(range(len(a)), 1)[0]
     o = [a[:swap]+b[swap:], b[:swap]+a[swap:]]
